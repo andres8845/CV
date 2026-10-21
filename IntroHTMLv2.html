@@ -1,139 +1,202 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum</title>
     <style>
-        * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
 
-        html { background-color: #f4f6f9; }
+      html {
+        background-color: #f4f6f9;
+      }
 
-        body {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 35px 45px;
-            font-family: Arial, sans-serif;
-            color: #333;
-            background: #fff;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-            line-height: 1.6;
-        }
+      body {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 35px 45px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        line-height: 1.6;
+      }
 
-        h1 {
-            color: #1d3557;
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 28px;
+      h1 {
+        color: #1d3557;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #dbe5f0;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        margin-top: 24px;
+        letter-spacing: 0.3px;
+        color: #274c77;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #dbe5f0;
+      }
+
+      p {
+        margin-top: 8px;
+        margin-bottom: 14px;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+      strong {
+        color: #1d3557;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+
+      .cv-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #dbe5f0;
+      }
+
+      .header-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .cv-header h1 {
+        margin-bottom: 8px;
+        overflow-wrap: anywhere;
+      }
+
+      .subtitle {
+        color: #274c77;
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .specialty {
+        color: #666;
+        margin-top: 4px;
+      }
+
+      .contact {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+      }
+
+      .profile-photo {
+        flex-shrink: 0;
+        width: 130px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid #dbe5f0;
+        margin: 0;
+      }
+
+      @media (max-width: 600px) {
+        .cv-header {
+          gap: 12px;
+          align-items: flex-start;
         }
 
         .profile-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid #dbe5f0;
-            margin-bottom: 15px;
+          width: 90px;
+          height: 110px;
         }
 
-        h2 {
-            color: #274c77;
-            font-size: 18px;
-            margin-top: 28px;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #dbe5f0;
+        .subtitle {
+          font-size: 15px;
         }
-
-        p {
-            margin-top: 8px;
-            margin-bottom: 14px;
-        }
-
-        ul { padding-left: 22px; }
-
-        @media (max-width: 600px) {
-            body { margin: 12px; padding: 22px; }
-            h1 { font-size: 24px; }
-        }
+      }
     </style>
-</head>
-<body>
-    <h1>Andrés David Martínez Andrade</h1>
+  </head>
+  <body>
+    <header class="cv-header">
+      <div class="header-info">
+        <h1>Andrés David Martínez Andrade</h1>
+        <p class="subtitle">Computer Systems Engineering Student</p>
+        <p class="specialty">Aspiring Full-Stack Web Developer</p>
 
-    <img src="AndresM.png" alt="Foto de Andrés" class="profile-photo">
+        <p class="contact">
+          <strong>Phone:</strong> +504 9976-3613<br />
+          <strong>Email:</strong>
+          andresmartinez_8845@hotmail.com
+        </p>
+      </div>
 
-    <h2>Contact Information</h2>
-    <p>
-        <strong>Phone:</strong> +504 9976-3613 <br>
-        <strong>Email:</strong> andresmartinez_8845@hotmail.com
-    </p>
+      <img src="AndresM.png" alt="Foto de Andrés" class="profile-photo" />
+    </header>
 
     <h2>Professional Summary</h2>
     <p>
-        Computer Systems Engineering student at UNITEC
-        and aspiring Full-Stack Web Developer with hands-on
-        experience developing personal and collaborative
-        software projects. Familiar with frontend and
-        backend development, REST APIs, relational
-        databases, and object-relational mapping (ORM).
-        Passionate about software development,
-        problem-solving, and continuous learning.
+      Computer Systems Engineering student at UNITEC and aspiring Full-Stack Web
+      Developer with hands-on experience developing personal and collaborative
+      software projects. Familiar with frontend and backend development, REST
+      APIs, relational databases, and object-relational mapping (ORM).
+      Passionate about software development, problem-solving, and continuous
+      learning.
     </p>
 
     <h2>Education</h2>
     <p>
-        <strong>Bachelor's Degree in Computer Systems Engineering</strong><br>
-        Universidad Tecnológica Centroamericana (UNITEC)<br>
-        Currently Pursuing
+      <strong>Bachelor's Degree in Computer Systems Engineering</strong><br />
+      Universidad Tecnológica Centroamericana (UNITEC)<br />
+      Currently Pursuing
     </p>
 
     <h2>Technical Skills</h2>
-    <p>
+
+    <ul>
+      <li>
         <strong>Programming Languages:</strong>
-        Java, C++, C#, C, JavaScript.
-        <br>
-
+        Java, C++, C#, C, JavaScript
+      </li>
+      <li>
         <strong>Frontend:</strong>
-        React, Vite, Blazor, HTML, CSS.
-        <br>
-
+        React, Vite, Blazor, HTML, CSS
+      </li>
+      <li>
         <strong>Backend:</strong>
-        .NET, Node.js, Express.js.
-        <br>
-
+        .NET, Node.js, Express.js
+      </li>
+      <li>
         <strong>ORMs:</strong>
-        Sequelize, TypeORM, Prisma, Entity Framework Core.
-        <br>
-
+        Sequelize, TypeORM, Prisma, Entity Framework Core
+      </li>
+      <li>
         <strong>Databases:</strong>
-        PostgreSQL, MySQL, Interbase.
-        <br>
-
+        PostgreSQL, MySQL, InterBase
+      </li>
+      <li>
         <strong>Development Tools:</strong>
-        Git, GitHub, Docker, Postman.
-    </p>
-
-    <h2>Personal Projects</h2>
-
-    <p>
-        Developed a web application for managing invoices and purchase records using React and Node.js.
-        Implemented invoice registration, image uploads, and responsive user interfaces, with price comparison.
-    </p>
-
-    <p>
-        Worked on web development projects related to inventory and product management, implementing administrative interfaces,
-        data handling, and API integration. Aswell, a personal project to migrate from X database to PostgreSQL.
-    </p>
+        Git, GitHub, Docker, Postman
+      </li>
+    </ul>
 
     <h2>Languages</h2>
     <ul>
-        <li>Spanish</li>
-        <li>English</li>
+      <li>Spanish</li>
+      <li>English</li>
     </ul>
-
-</body>
+  </body>
 </html>
